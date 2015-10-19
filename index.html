@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Active Gym</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximun-scale=1">
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body ng-app>
+    <!-- FACEBOOK -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.4";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- FACEBOOK -->
+
+    <div class="ed-container full abcenter precarga"> 
+      <div class="ed-item column web-40">
+        <figure><img src="img/logocolor.svg" alt=""></figure>
+        <figure><img src="img/loader.gif" alt=""></figure>
+      </div>
+    </div>
+    <header>
+      <div class="cabecer0">   
+        <div class="ed-container">
+          <div class="ed-item base-40 movil-50 tablet-75">
+            <figure><img src="" alt=""></figure>
+          </div>
+          <div class="ed-item base-60 movil-50 tablet-25">
+            <h2> <span>(011) </span>372</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+    <header id="header">
+      <div class="cabecera">
+        <div class="ed-container">
+          <div class="ed-item base-40 movil-50 tablet-75">
+            <figure><img src="img/logoblanco.svg" alt="logo"></figure>
+            <div class="fb-like desde-web" data-href="https://www.facebook.com/MundoNaturalHoy?fref=ts" data-layout="button_count" style="position:absolute; margin-top:-3.3em; margin-left:15em"></div>
+          </div>
+          <div class="ed-item base-60 movil-50 tablet-25">
+            <h2 class="icon-telefono"> <span>(011) </span>3723-1986</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+      <div class="ed-container">
+        <div class="ed-item movil-75 movil-offset-25 web-40 web-offset-25">
+          <h1>¿Querés un cuerpo escultural sin pisar el gimnasio?</h1>
+          <figure alt="logoColor"><img src="img/logocolor.svg" alt="logo2"></figure>
+          <p class="desde-movil">es la nueva forma de estar en forma.</p>
+        </div>
+      </div>
+      <div class="ed-container">
+        <div class="ed-item movil-offset-45 movil-55 web-offset-35 web-30 desde-movil">
+          <figure alt="pack"></figure>
+        </div>
+      </div>
+    </main><span class="btn-llamar"></span>
+    <div class="formulario">
+      <div class="ed-container">
+        <div class="ed-item no-padding">
+          <h3>PEDÍ HOY TU ACTIVE GYM</h3>
+          <form action="form.php" method="post" name="formulario" novalidate="" class="ed-container">
+            <div class="ed-item nombre">
+              <input type="text" placeholder="Nombre" required="" ng-model="nombre" name="nombre" ng-minlength="2">
+              <div ng-if="formulario.nombre.$error.minlength" class="inputError diferente">
+                <ul>
+                  <li>Completa este campo con tu nombre</li>
+                </ul>
+              </div>
+            </div>
+            <div class="ed-item email">
+              <input type="email" placeholder="Email" required="" ng-model="email" name="email" ng-pattern="/^([0-9a-zA-Z_]([-.\w]*[0-9a-zA-Z_.-])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/">
+              <div ng-if="formulario.email.$error.pattern" class="inputError diferente">
+                <ul>
+                  <li>Coloca un correo valido</li>
+                </ul>
+              </div>
+            </div>
+            <div class="ed-item cod">
+              <input type="number" placeholder="Código de Área" required="" name="cod" data-tool="ejemplo 011" ng-model="cod" ng-maxlength="5" ng-minlength="2">
+              <div ng-if="formulario.cod.$error.minlength" class="inputError diferente">
+                <ul>
+                  <li>El código es muy corto</li>
+                </ul>
+              </div>
+              <div ng-if="formulario.cod.$error.maxlength" class="inputError diferente">
+                <ul>
+                  <li>El código es muy largo</li>
+                </ul>
+              </div>
+            </div>
+            <div class="ed-item telefono">
+              <input type="number" placeholder="Teléfono" required="" name="telefono" ng-model="telefono" ng-minlength="6">
+              <div ng-if="formulario.telefono.$error.minlength" class="inputError diferente">
+                <ul>
+                  <li>Colocar un teléfono valido</li>
+                </ul>
+              </div>
+            </div>
+            <input type="submit" value="CONSULTAR" ng-disabled="formulario.$invalid" data-tool="completa el formulario" class="ed-item boton">
+          </form>
+        </div>
+      </div>
+    </div>
+    <section class="seccion">
+      <div class="ed-container">
+        <div class="ed-item abcenter">
+          <h3>Ahora, podés estar divina ¡sin esfuerzos!</h3>
+          <p>La grasa es un componente del cuerpo humano que se acumula en forma de tejido graso o adiposo.<br> La cantidad de grasa que amontonamos en el cuerpo, varía en función de la edad, el organismo y otras variables,<br> dependiendo de cada mujer. Por eso, a pesar de que muchas hacen actividad física, les cuesta encontrar la figura ideal.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="ed-container seccion2">
+        <div class="ed-item web-50" style="position:relative">
+          <figure></figure>
+          <div class="fb-like desde-web" data-href="https://www.facebook.com/MundoNaturalHoy?fref=ts" data-layout="button_count" style="position:absolute; margin-left:15em"></div>
+        </div>
+        <div class="ed-item web-50">
+          <div class="ed-container">
+            <div class="ed-item">
+              <h4>Pero ahora, para todas ellas, llegó Active Gym.</h4>
+              <p>Active Gym es un novedoso gel de acción inteligente desarrollado a través de un revolucionario proceso biotecnológico que produce en el cuerpo los mismos efecto del deporte, pero sin hacer ningún tipo de esfuerzos, porque actúa sobre las zonas con flacidez y sobrepeso, incrementando el metabolismo de las fibras musculares, generando mejor tonicidad y firmeza de la piel, disminuyendo el volumen del tejido graso y redefiniendo la figura. La actividad física ya no es la única manera de tener el cuerpo que querés. Descubrí Active Gym y sorprendete.</p>
+            </div>
+            <div class="ed-item">
+              <h4 alt="this">Formulación exclusiva.<br>Active Gym es lo último en cremas reafirmantes.</h4>
+              <p>La fórmula de Active Gym se origina a partir de un alga marina llamada Bacillus sp, de la cual se extrae su principal activo. Recientemente, se realizaron estudios in vivo en mujeres donde se comprobó la efectividad del producto en 28 y 56 días.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="seccion3">
+      <div class="ed-container justify">
+        <div class="ed-item tablet-49 seccion3-1 desde-tablet">
+          <ul class="column distributed">
+            <li class="main-start cross-center"><span class="icon-aceptar circulo-verde"></span>Reduce hasta 1.3 cm el contorno de brazos.</li>
+            <li class="main-start cross-center"><span class="icon-aceptar circulo-verde"></span>Reduce hasta 2.8 cm el perímetro abdominal.</li>
+            <li class="main-start cross-center"><span class="icon-aceptar circulo-verde"></span>Reduce hasta 3 kg de peso corporal.</li>
+            <li class="main-start cross-center"><span class="icon-aceptar circulo-verde"></span>Aumenta aún más la reducción si se<br> complementa con ejercicio físico.</li>
+            <li class="main-start cross-center"><span class="icon-aceptar circulo-verde"></span>Reduce hasta 2.1 cm el contorno en muslos.</li>
+          </ul>
+        </div>
+        <div class="ed-item tablet-49 seccion3-1">
+          <ul data="right" class="column distributed">
+            <li>
+              <h3>Ya lo sabés. Con Active Gym,<br> podés tener el cuerpo de un deportista<br> sin hacer deporte.</h3>
+            </li>
+            <li class="main-start cross-center"><span class="icon-aceptar circulo-azul"></span>Funciona sin realizar actividad física.</li>
+            <li class="main-start cross-center"><span class="icon-aceptar circulo-azul"></span>Producto innovador con fórmula biotecnológica.</li>
+            <li class="main-start cross-center"><span class="icon-aceptar circulo-azul"></span>Fácil de aplicar.</li>
+            <li class="main-start cross-center"><span class="icon-aceptar circulo-azul"></span>Resultados comprobables a los 28 y 56 días.</li>
+            <li class="main-start cross-center"><span class="icon-aceptar circulo-azul"></span>No genera efectos adversos.</li>
+            <li class="main-start cross-center"><span class="icon-aceptar circulo-azul"></span>Entrega del producto a domicilio.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="ed-container seccion4">
+        <div class="ed-item tablet-55 tablet-offset-20">
+          <h2>Los componentes de Active Gym<br>actúan tanto sobre las grasas visibles como las invisibles.</h2>
+          <p>Los médicos y especialistas más prestigiosos del mercado recomiendan Active Gym porque es el único producto del mercado que permite generar en el cuerpo los mismos efectos del deporte. Cuando un producto es realmente bueno, los resultados están a la vista. Si querés tener la figura de un deportista, Active Gym hace el esfuerzo por vos.</p>
+        </div>
+      </div>
+    </section>
+    <div class="ed-container desde-web">
+      <div class="ed-item">
+        <div class="line"></div>
+      </div>
+    </div>
+    <section class="testimonios">
+      <div class="ed-container">
+        <div class="ed-item">
+          <h2>Ellas, lo usan y lo recomiendan:</h2>
+        </div>
+        <div class="ed-item tablet-50 main-start justify ed-container">
+          <figure class="ed-item tablet-30"></figure>
+          <p class="ed-item tablet-70">“Llego bastante tarde del trabajo y la verdad es que no me dan muchas ganas de cambiarme y volver a salir para ir al gimnasio. Descubrí Active Gym gracias a una amiga que lo usaba y además, por verla a ella, me di cuenta de que el producto realmente funciona. ¡Los cambios en mi cuerpo son increíbles! Eliminé esos horribles rollitos en la cintura y mi piel está mucho más firme. Es cierto que esta crema produce los mismos efectos que el deporte. ¡Active Gym me encanta!”. Laura, 52 años. San Juan.</p>
+        </div>
+        <div class="ed-item tablet-50 main-start justify ed-container">
+          <figure alt="right" class="ed-item tablet-30"></figure>
+          <p class="ed-item tablet-70">“Toda la vida me gustó la actividad física y hacer deporte. Pero después de tener a mi segundo hijo, dedicarme a mi cuerpo se hizo casi imposible. Por eso elijo Active Gym. Me ayuda a mantenerme en forma y ¡sin esfuerzo! Los resultados son sorprendentes. Se los recomiendo a todos. Incluso a los que son de entrenar y buscan mejores resultados”. Analía, 43 años. Caballito.</p>
+        </div>
+      </div>
+    </section>
+    <section class="seccion5">
+      <div class="ed-container">
+        <div class="ed-item web-25 no-padding">
+          <form action="form.php" method="post" name="formulario2" novalidate="" class="ed-container distribute">
+            <div class="ed-item nombre">
+              <input type="text" placeholder="Nombre" required="" ng-model="nombre2" name="nombre2" ng-minlength="2">
+              <div ng-if="formulario2.nombre2.$error.minlength" class="inputError diferente">
+                <ul>
+                  <li>Completa este campo con tu nombre</li>
+                </ul>
+              </div>
+            </div>
+            <div class="ed-item email">
+              <input type="email" placeholder="Email" required="" ng-model="email2" name="email2" ng-pattern="/^([0-9a-zA-Z_]([-.\w]*[0-9a-zA-Z_.-])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$/">
+              <div ng-if="formulario2.email2.$error.pattern" class="inputError diferente">
+                <ul>
+                  <li>Coloca un correo valido</li>
+                </ul>
+              </div>
+            </div>
+            <div class="ed-item cod">
+              <input type="number" placeholder="Código de Área" required name="cod2" data-tool="ejemplo 011" ng-model="cod2" ng-maxlength="5" ng-minlength="2">
+              <div ng-if="formulario2.cod2.$error.minlength" class="inputError diferente">
+                <ul>
+                  <li>El código es muy corto</li>
+                </ul>
+              </div>
+              <div ng-if="formulario2.cod2.$error.maxlength" class="inputError diferente">
+                <ul>
+                  <li>El código es muy largo</li>
+                </ul>
+              </div>
+            </div>
+            <div class="ed-item telefono">
+              <input type="number" placeholder="Teléfono" required="" name="telefono2" ng-model="telefono2" ng-minlength="6">
+              <div ng-if="formulario2.telefono2.$error.minlength" class="inputError diferente">
+                <ul>
+                  <li>Colocar un teléfono valido</li>
+                </ul>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="ed-item web-50">
+          <h2>TENÉ LA FIGURA QUE QUÉRES DE LA MANERA MÁS FÁCIL</h2>
+          <div class="ed-container no-padding">
+            <div class="ed-item web-35">
+              <h4>OBTENÉ CON TU PRIMER PEDIDO</h4>
+            </div>
+            <div class="ed-item web-65">
+              <h3>15 DÍAS GRATIS!</h3>
+            </div>
+            <input type="submit" value="ADQUIRÍ TU OFERTA AHORA!" ng-disabled="formulario2.$invalid" class="ed-item boton web-offset-25">
+          </div>
+        </div>
+        <div class="ed-item tablet-25">
+          <figure></figure>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <header>
+        <div class="ed-container abcenter">
+          <div class="ed-item base-80 movil-50 web-30 ed-container no-padding abcenter">
+            <figure class="ed-item tablet-20 base-20"><img src="img/Telefonista.png" alt="this"></figure>
+            <p class="ed-item tablet-80 base-80">(011) 3723-1963<br> Conseguilo exclusivamente<br>por venta telefónica.</p>
+          </div>
+          <div class="ed-item base-80 movil-50 web-20 ed-container no-padding abcenter padre">
+            <figure class="ed-item tablet-30 base-20"><img src="img/Relojfooter.png" alt=""></figure>
+            <p class="ed-item tablet-70 base-80">Atención<br>de 7 a 23 hs.</p>
+          </div>
+          <div class="ed-item base-80 movil-50 web-25 ed-container no-padding abcenter padre">
+            <figure class="ed-item tablet-30 base-20"><img src="img/Camioneta.png" alt=""></figure>
+            <p class="ed-item tablet-70 base-80">Envíos a domicilio<br> en todo el país.</p>
+          </div>
+          <div class="ed-item base-80 movil-50 web-25 ed-container no-padding abcenter padre">
+            <figure class="ed-item tablet-20 base-20"><img src="img/Tarjeta.png" alt=""></figure>
+            <p class="ed-item tablet-80 base-80">Aceptamos<br>todas las tarjetas.</p>
+          </div>
+        </div>
+      </header>
+      <footer>
+        <div class="ed-container abcenter">
+          <div class="ed-item web-75">
+            <p>Ante la menor duda consulte a su médico y/o farmacéutico. <a href="politicasdeprivacidad.html">TÉRMINOS, CONDICIONES Y POLÍTICAS DE PRIVACIDAD </a>Active Gym Copyright © 2015 - All Rights Reserved - Todos los derechos Reservados</p>
+          </div>
+        </div>
+      </footer>
+    </footer>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
